@@ -13,7 +13,6 @@ export async function enqueue(op: SyncOperation): Promise<void> {
     await store.put(q, QUEUE_KEY);
     await tx.done;
   } catch (e) {
-    // fallback
     const q = JSON.parse(
       localStorage.getItem(QUEUE_KEY) || "[]"
     ) as SyncOperation[];

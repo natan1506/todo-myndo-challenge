@@ -5,7 +5,7 @@ import TaskList from "./components/task-list";
 import { drainQueue } from "./lib/syncQueue";
 import type { SyncOperation } from "./types";
 import useTasks from "./store";
-import { sortTasks } from "./components/hook/sort-tasks-priority";
+import { sortTasks } from "./hook/sort-tasks-priority";
 
 function App() {
   const [openedModal, setOpenedModal] = useState(false);
