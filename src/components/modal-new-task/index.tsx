@@ -98,7 +98,7 @@ export function DiolagNewTask({ state, onOpenChange }: DiolagNewTaskProps) {
                 Add a new task in your backlog.
               </DialogDescription>
             </DialogHeader>
-            <div className="grid gap-4 pb-2">
+            <div className="grid gap-4 py-2">
               <FormField
                 control={form.control}
                 name="title"
